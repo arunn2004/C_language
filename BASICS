@@ -1,0 +1,60 @@
+1] concepts of the C programming language : Variables, Strings, Conditions, Arrays, Loops, Functions, structures, pointers and File Handling
+
+2 ] #include <stdio.h>
+    int main() {
+    printf("Hello, World!");
+    return 0;
+     }
+#include <stdio.h> This line tells the compiler to include the Standard Input Output library. It gives you access to the printf function, which is used to display messages on the screen.
+int main() { ... } This is the starting point of every C program. It’s where execution begins. Think of main() as the front door of your program—without it, nothing runs.
+printf("Hello, World!"); This prints the text Hello, World! to the screen. It’s your way of telling the computer: “Show this message.”
+return 0; This tells the operating system that the program finished successfully. 
+
+
+3] Code Blocks with Curly Braces:
+#include <stdio.h> // Include the standard I/O library
+int main() {
+    {
+        // Start of a block
+        printf("This is a block!"); // Print a message inside the block
+        // End of the block
+    }
+    // Code outside the block would run after this
+    return 0;
+}
+
+
+4]   Printing Text:
+      To print plain text, just put it inside double quotes (" ") :
+     #include <stdio.h>
+
+     int main() {
+    printf("Hello, World!");  // Output: Hello, World!
+    return 0;
+}
+
+
+
+2. Printing Numbers and Characters
+
+Use format specifiers inside the string to print different types of values:
+
+Common Format Specifiers in C
+
+Format	Description	Example Output
+%d	Integer (int)	42
+%f	Floating point (float)	3.14
+%c	Single character	A
+%%	Percent symbol	%
+Example:
+
+#include <stdio.h>
+
+int main() {
+    printf("Integer: %d", 25);      // Output: Integer: 25
+    printf("Float: %f", 3.14);      // Output: Float: 3.140000
+    printf("Character: %c", 'A');   // Output: Character: A
+    return 0;
+}
+
+
