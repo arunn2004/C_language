@@ -11,7 +11,22 @@ printf("Hello, World!"); This prints the text Hello, World! to the screen. It’
 return 0; This tells the operating system that the program finished successfully. 
 
 
-3] Code Blocks with Curly Braces:
+
+3] Preprocessor directives are special commands in C that start with the hash symbol (#) and are processed by the preprocessor (a text substitution tool) before the code is sent to the compiler. They are not part of the C language itself but help in managing code modularity, readability, and flexibility. 
+The main types of preprocessor directives are:
+File Inclusion (#include): Inserts the contents of a specified file (usually a header file) into the current source file. This is crucial for using standard library functions like printf() and scanf().
+#include <filename.h>: Searches in standard system directories.
+#include "filename.h": Searches first in the current directory, then in standard system directories.
+
+Macros (#define, #undef): Used for defining constants or code snippets that are replaced by their value or content throughout the program before compilation.
+#define identifier replacement_text: Replaces identifier with replacement_text (e.g., #define PI 3.14).
+#undef identifier: Removes a previously defined macro.
+Function-like macros can also accept arguments, like #define SQUARE(x) ((x) * (x)).
+
+Conditional Compilation (#if, #ifdef, #ifndef, #else, #elif, #endif): Allows specific sections of code to be compiled or ignored based on certain conditions at compile time
+
+
+4] Code Blocks with Curly Braces:
 #include <stdio.h> // Include the standard I/O library
 int main() {
     {
@@ -24,7 +39,7 @@ int main() {
 }
 
 
-4]   Printing Text:
+5]   Printing Text:
       To print plain text, just put it inside double quotes (" ") :
      #include <stdio.h>
 
@@ -35,7 +50,7 @@ int main() {
 
 
 
-2. Printing Numbers and Characters
+6] Printing Numbers and Characters
 
 Use format specifiers inside the string to print different types of values:
 
