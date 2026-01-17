@@ -26,7 +26,8 @@ Function-like macros can also accept arguments, like #define SQUARE(x) ((x) * (x
 Conditional Compilation (#if, #ifdef, #ifndef, #else, #elif, #endif): Allows specific sections of code to be compiled or ignored based on certain conditions at compile time
 
 
-4] Code Blocks with Curly Braces:
+4] In C programming, code blocks are enclosed within curly braces { }. They are used to group multiple statements together and help define the structure of your program clearly
+Code Blocks with Curly Braces:
 #include <stdio.h> // Include the standard I/O library
 int main() {
     {
