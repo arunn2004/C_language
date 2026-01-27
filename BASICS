@@ -1,4 +1,4 @@
-1] concepts of the C programming language : Basic sysntax , Variables,datatypes, constants,Operators, Strings, Conditional statements , Arrays, Loops, Functions, structures, pointers and File Handling
+1] concepts of the C programming language : Basic sysntax , Variables,datatypes, constants,Operators, Strings, Conditional statements ,Loops, Arrays, Functions, structures, pointers and File Handling
 
 2 ] #include <stdio.h>
     int main() {
