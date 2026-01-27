@@ -23,7 +23,10 @@ Macros (#define, #undef): Used for defining constants or code snippets that are 
 #undef identifier: Removes a previously defined macro.
 Function-like macros can also accept arguments, like #define SQUARE(x) ((x) * (x)).
 
-Conditional Compilation (#if, #ifdef, #ifndef, #else, #elif, #endif): Allows specific sections of code to be compiled or ignored based on certain conditions at compile time
+Arguments = values you supply to a function or macro.
+
+Conditional Compilation (#if, #ifdef, #ifndef, #else, #elif, #endif): Allows specific sections of code to be compiled or ignored based on certain conditions at compile time.
+Conditional compilation allows selective inclusion/exclusion of code segments during preprocessing based on defined macros or conditions.
 
 
 4] In C programming, code blocks are enclosed within curly braces { }. They are used to group multiple statements together and help define the structure of your program clearly
