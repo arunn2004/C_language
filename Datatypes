@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    a = 500;
+    long b;
+    b = 10000000;
+    printf("Balance in millions:%dmillion\n",a);
+    printf("Total Bank Balance:%ldmillions\n",b);
+    return 0;
+}
