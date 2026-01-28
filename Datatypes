@@ -9,3 +9,36 @@ int main()
     printf("Total Bank Balance:%ldmillions\n",b);
     return 0;
 }
+
+
+Primitive Data Types: Float and Double
+In C, both float and double are used to store floating-point numbers, which are numbers with decimal points.
+
+float: A single-precision data type that occupies 4 bytes of memory and can hold up to 7 decimal digits.
+double: A double-precision data type that occupies 8 bytes of memory and can hold up to 15 decimal digits. A double has a higher range than a float in C, as it is a 64-bit floating-point number.
+Syntax:
+
+float variable_name = value;  // Declaration and assignment of a float variable
+double variable_name = value; // Declaration and assignment of a double variable
+Example:
+
+#include <stdio.h>
+
+int main() {
+    // Declaring a float variable
+    float floatVar = 3.123456789f; // The f suffix indicates that this value should be treated as a float.    
+
+    // Declaring a double variable
+    double doubleVar = 3.123456789123456; // Value assigned to a double variable with higher decimal places
+
+    // Printing the values of float and double with full precision
+    // Format specifier %f for float and %lf for double. However, %f works for both float and double in C
+    printf("Value of floatVar (float): %f\n", floatVar); // Printing float value
+    printf("Value of doubleVar (double): %lf\n", doubleVar); // Printing double value
+
+    return 0;
+}
+Expected Output:
+
+Value of floatVar (float): 3.123457
+Value of doubleVar (double): 3.123457
