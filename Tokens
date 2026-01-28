@@ -1,4 +1,14 @@
-Keywords : Keywords are built-in words with fixed and defined meaning ,  that serve specific purposes,for controlling program flow. 
+Table of Content
+
+Punctuators
+Keywords
+Strings
+Operators
+Identifiers
+Constants
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________
+1] Keywords : Keywords are built-in words with fixed and defined meaning ,  that serve specific purposes,for controlling program flow. 
 Example:
 
 #include <stdio.h>
