@@ -1,1 +1,66 @@
+Keywords : Keywords are built-in words with fixed and defined meaning ,  that serve specific purposes,for controlling program flow. 
+Example:
+
+#include <stdio.h>
+
+int main() {
+    printf("Welcome to C programming!");
+    return 0;
+}
+In this code, int, main, and return are keywords. They must be used exactly as they are defined in the C language.
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+2. Identifiers:
+
+Identifiers are names that you, the programmer, define to label parts of your program, such as:
+
+Variables
+Functions
+Arrays
+Identifiers make your code readable and help the compiler recognize each element uniquely.
+
+Rules for Valid Identifiers:
+
+Must start with a letter (A–Z or a–z) or an underscore (_)
+Can include letters, digits, and underscores
+Cannot be a C keyword
+Are case-sensitive (score, Score, and SCORE are different)
+Examples:
+
+int userAge = 20;       // Valid
+float height_cm = 172;  // Valid
+char initial = 'A';     // Valid
+
+// int for = 5;         // Invalid: 'for' is a keyword
+// int 99number = 10;   // Invalid: cannot start with a digit
+// int void = 7;        // Invalid: 'void' is a keyword
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+3 ] Escape sequences in C: 
+In this lesson, you'll learn how to use escape sequences in C to include special characters in your output. These sequences begin with a backslash (\) followed by a character, letting you insert things like new lines, tabs, or quotation marks within a string. They help format your output and handle characters that can’t be typed directly into text.
+
+Common Escape Sequences:
+
+Escape Sequence	Name	Description
+\n	New line	Moves text to a new line
+\t	Horizontal tab	Inserts a tab space
+\\	Backslash (\)	Prints a single backslash
+\"	Double quote (")	Allows quotes inside a string
+\'	Single quote (')	Useful in character constants
+
+Example: 
+c
+#include <stdio.h>
+
+int main() {
+    printf("Name\tAge\tLocation\n");
+    printf("John\t30\tNew York\n");
+    printf("Jane\t25\tLondon\n");
+    return 0;
+}
+Output:
+Name    Age     Location
+John    30      New York
+Jane    25      London
+
 
