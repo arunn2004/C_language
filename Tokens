@@ -73,4 +73,44 @@ Name    Age     Location
 John    30      New York
 Jane    25      London
 
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
+4] Separators and operators in C
+In C programming, separators and operators play a crucial role in writing clear, functional code. They help define the structure of the program and perform various operations on data.
+
+1. Separators in C
+
+Separators are symbols used to group and organize code. They help the compiler distinguish different parts of a statement or program block.
+
+Common Separators:
+
+; (semicolon) — Ends a statement.
+{} (curly braces) — Define the beginning and end of a code block.
+() (parentheses) — Used in function calls and control statements.
+[] (square brackets) — Used to define arrays.
+, (comma) — Separates multiple items in a list (e.g., arguments in a function call).
+Example:
+
+#include <stdio.h>  // Separator: includes the standard input/output header
+
+int main() {        // Separator: parentheses () define the function, braces {} enclose the block
+    printf("Hello, World!");  // Separator: semicolon (;) ends the statement
+
+    return 0;  // Separator: semicolon (;) ends the return statement
+}
+2. Operators in C
+
+Operators are special symbols that perform operations on variables and values.
+
+Categories of Operators:
+
+Arithmetic Operators: +, -, *, /, %
+Relational Operators: ==, !=, >, <, >=, <=
+Logical Operators: &&, ||, !
+Assignment Operators: =, +=, -=, etc.
+Increment/Decrement: ++, --
+Example:
+
+ int a = 5;        // = is the assignment operator
+ int b = 3;        // = is the assignment operator
+ int sum = a + b;  // + is the arithmetic addition operator
