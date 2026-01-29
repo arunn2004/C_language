@@ -1,3 +1,51 @@
+1] Variables:  A variable is a data name used to store a data value in memory. It must be declared with a specific data type before it can be used. 
+Declaration syntax: data_type variable_name;
+
+Initialization syntax: data_type variable_name = value; 
+
+Rules for Naming Variables:
+Names can contain letters, digits, and underscores (_).
+Names must start with a letter or an underscore.
+No white spaces or reserved keywords are allowed.
+Names are case-sensitive (e.g., Total is different from TOTAL). 
+
+2] Data Types : Data types specify the type of data a variable can store and the memory size it requires. C supports several fundamental data types: 
+int: Used to store whole numbers (integers), such as 10 or -42.
+float: Used to store single-precision floating-point numbers (numbers with decimals), such as 19.99.
+double: Used to store double-precision floating-point numbers, providing greater precision than float.
+char: Used to store a single character, such as 'A' or 'b'. Characters are enclosed in single quotes.
+void: Used to specify the type of functions that do not return a value. 
+
+Type modifiers like short, long, signed, and unsigned can be used with these basic types to alter their size and range. 
+
+Constants
+Constants (also called literals) are fixed values that the program cannot alter during its execution. 
+Types of Constants:
+Integer Constants: Whole numbers without fractional parts (e.g., 10, -5, 0xFF (hexadecimal)).
+Floating-point Constants: Real numbers with fractional parts (e.g., 3.14, 1.23e-3).
+Character Constants: A single character enclosed in single quotes (e.g., 'a', '\n' (escape sequence)).
+String Constants: A sequence of characters enclosed in double quotes (e.g., "Hello World", "123"). 
+Defining Constants:
+Constants can be defined in two primary ways:
+Using the const keyword: This is a type-safe method where the value is assigned at declaration and cannot be changed later.
+c
+const float PI = 3.14159;
+const int MAX_VALUE = 100;
+Using the #define preprocessor directive: This defines a symbolic constant (macro) that is substituted by its value during the pre-processing stage before compilation. No data type is specified, and no semicolon is used at the end of the #define line.
+c
+#define PI 3.14159
+#define MAX_VALUE 100
+
+
+
+
+
+
+
+
+
+
+
 #include<stdio.h>
 int main()
 {
