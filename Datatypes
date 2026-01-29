@@ -35,17 +35,8 @@ Using the #define preprocessor directive: This defines a symbolic constant (macr
 c
 #define PI 3.14159
 #define MAX_VALUE 100
-
-
-
-
-
-
-
-
-
-
-
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+1] Long datatype: 
 #include<stdio.h>
 int main()
 {
@@ -58,8 +49,7 @@ int main()
     return 0;
 }
 
-
-Primitive Data Types: Float and Double
+2] Primitive Data Types: Float and Double
 In C, both float and double are used to store floating-point numbers, which are numbers with decimal points.
 
 float: A single-precision data type that occupies 4 bytes of memory and can hold up to 7 decimal digits.
