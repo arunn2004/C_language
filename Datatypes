@@ -49,34 +49,104 @@ int main()
     return 0;
 }
 
-2] Primitive Data Types: Float and Double
-In C, both float and double are used to store floating-point numbers, which are numbers with decimal points.
-
-float: A single-precision data type that occupies 4 bytes of memory and can hold up to 7 decimal digits.
-double: A double-precision data type that occupies 8 bytes of memory and can hold up to 15 decimal digits. A double has a higher range than a float in C, as it is a 64-bit floating-point number.
-Syntax:
-
-float variable_name = value;  // Declaration and assignment of a float variable
-double variable_name = value; // Declaration and assignment of a double variable
-Example:
+2] Integer Data Type: 
+Stores whole numbers (positive, negative, or zero).
+We use int keyword to declare the integer variable:
+Size: 4 bytes, Range: -2,147,483,648 to 2,147,483,647.
+Format specifier: %d.
+Format specifiers are the symbols that are used for printing and scanning values of given data types.
 
 #include <stdio.h>
-
+​
 int main() {
-    // Declaring a float variable
-    float floatVar = 3.123456789f; // The f suffix indicates that this value should be treated as a float.    
-
-    // Declaring a double variable
-    double doubleVar = 3.123456789123456; // Value assigned to a double variable with higher decimal places
-
-    // Printing the values of float and double with full precision
-    // Format specifier %f for float and %lf for double. However, %f works for both float and double in C
-    printf("Value of floatVar (float): %f\n", floatVar); // Printing float value
-    printf("Value of doubleVar (double): %lf\n", doubleVar); // Printing double value
-
+    int var = 22;
+    
+    printf("var = %d", var);
     return 0;
 }
-Expected Output:
 
-Value of floatVar (float): 3.123457
-Value of doubleVar (double): 3.123457
+Output
+var = 22
+
+
+3] Character Data Type: 
+Stores a single character (like ‘A’, ‘b’, or ‘5’).
+Size: 1 byte, Range: -128 to 127 (signed by default).
+Format specifier: %c.
+
+#include <stdio.h>
+​
+int main() {
+    char ch = 'A';
+    
+    printf("ch = %c", ch);
+    return 0;
+}
+
+Output
+ch = A
+
+
+
+4] Float Data Type: 
+Stores decimal numbers (numbers with fractional part).
+Size: 4 bytes, Approximate range: 3.4e-38 to 3.4e+38.
+Format specifier: %f.
+
+#include <stdio.h>
+​
+int main() {
+    float val = 12.45;
+    
+    printf("val = %f", val);
+    return 0;
+}
+
+Output
+val = 12.450000
+
+
+
+5] Double Data Type: 
+Stores decimal numbers with more precision than float.
+Size: 8 bytes, Approximate range: 1.7e-308 to 1.7e+308.
+Format specifier: %lf.
+
+
+
+#include <stdio.h>
+​
+int main() {
+    double val = 1.4521;
+    
+    printf("val = %lf", val);
+    return 0;
+}
+
+Output
+val = 1.452100
+
+
+6] Void Data Type
+Represents no value or empty type.
+Used in functions that do not return any value.
+Can also be used for generic pointers (void *) in memory operations.
+
+
+
+#include <stdio.h>
+​
+// Function with void return type
+void greet()
+{
+    printf("Hello, welcome!\n");
+}
+​
+int main()
+{
+    greet();
+    return 0;
+}
+
+Output
+Hello, welcome!
