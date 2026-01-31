@@ -13,53 +13,36 @@ Example: Conditional Operator( ? : )
 
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-1] Addition Operator (+) in C
-The addition operator + is a binary arithmetic operator in C used to add two numeric values. It takes two operands and returns their sum.
+1] Arithmetic Operators
+The arithmetic operators are used to perform arithmetic/mathematical operations on operands. There are 9 arithmetic operators in C language:
 
-Syntax:
-
-dataType variableName = operand1 + operand2;
-operand1 and operand2 can be integers, float, or constants.
-The + operator returns a value that is the sum of both operands.
-Example:
-
-#include <stdio.h> 
-
+#include <stdio.h>
+​
 int main() {
-    int a = 5;       // Declare and initialize the first integer
-    int b = 10;      // Declare and initialize the second integer
-
-    // Display the result of the addition using the + operator to add a and b
-    printf("Sum = %d", a + b);  // Output: 15
-
-    return 0; 
+​
+    int a = 25, b = 5;
+​
+    // using operators and printing results
+    printf("a + b = %d\n", a + b);
+    printf("a - b = %d\n", a - b);
+    printf("a * b = %d\n", a * b);
+    printf("a / b = %d\n", a / b);
+    printf("a %% b = %d\n", a % b);
+    printf("+a = %d\n", +a);
+    printf("-a = %d\n", -a);
+    printf("a++ = %d\n", a++);
+    printf("a-- = %d\n", a--);
+​
+    return 0;
 }
 
-_______________________________________________________________________________________________________________________________________________________________________________________________________________________________
-
-2] Subtraction Operator (-) in C
-The subtraction operator (-) in C is used to subtract one value from another returns the difference between the two operands. It's represented by the minus sign (-).
-
-Syntax:
-
-dataType variableName = number1 - number2;
-number1 and number2 can be variables or constants..
-Example:
-
-#include <stdio.h>  
-
-int main() {
-    // Declare and initialize two integer variables
-    int number1 = 15;  // First number
-    int number2 = 7;   // Second number
-
-    // Print the difference using the subtraction operator
-    // number1 - number2 calculates the result directly inside printf
-    printf("Difference = %d", number1 - number2);  // Output: 8
-
-    return 0; 
-}
-
-____________________________________________________________________________________________________________________________________________________________________________________________________________________________
-
-3] 
+Output
+a + b = 30
+a - b = 20
+a * b = 125
+a / b = 5
+a % b = 0 [ modulus , gives only remainder value after the division ] . 
++a = 25
+-a = -25
+a++ = 25
+a-- = 26
