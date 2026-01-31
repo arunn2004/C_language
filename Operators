@@ -1,1 +1,40 @@
+Operators: Operators are the basic components of C programming. They are symbols that represent some kind of operation, such as mathematical, relational, bitwise, conditional, or logical computations, 
+which are to be performed on values or variables. The values and variables used with operators are called operands.
 
+Unary, Binary and Ternary Operators
+On the basis of the number of operands they work on, operators can be classified into three types :
+
+Unary Operators: Operators that work on single operand.
+Example: Increment( ++ ) , Decrement( -- )
+Binary Operators: Operators that work on two operands.
+Example: Addition ( + ), Subtraction( - ) , Multiplication ( * )
+Ternary Operators: Operators that work on three operands.
+Example: Conditional Operator( ? : )
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+1] Addition Operator (+) in C
+The addition operator + is a binary arithmetic operator in C used to add two numeric values. It takes two operands and returns their sum.
+
+Syntax:
+
+dataType variableName = operand1 + operand2;
+operand1 and operand2 can be integers, float, or constants.
+The + operator returns a value that is the sum of both operands.
+Example:
+
+#include <stdio.h> 
+
+int main() {
+    int a = 5;       // Declare and initialize the first integer
+    int b = 10;      // Declare and initialize the second integer
+
+    // Display the result of the addition using the + operator to add a and b
+    printf("Sum = %d", a + b);  // Output: 15
+
+    return 0; 
+}
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+2] 
