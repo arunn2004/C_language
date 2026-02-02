@@ -44,6 +44,8 @@ a / b = 5
 a % b = 0 [ modulus , gives only remainder value after the division ] . 
 +a = 25
 -a = -25
+
+
 a++ = 25
 a-- = 26
 
@@ -51,9 +53,6 @@ ________________________________________________________________________________
 
 2] Relational Operators
 The relational operators in C are used for the comparison of the two operands. All these operators are binary operators that return true or false values as the result of comparison.
-
-
-
 
 #include <stdio.h>
 ​
@@ -78,3 +77,4 @@ a <= b: 0
 a >= b: 1
 a == b: 0
 a != b : 1
+______________________________________________________________________________________________________________________________________________________________________________________________________________
