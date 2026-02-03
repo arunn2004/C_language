@@ -182,3 +182,121 @@ Output:
 After simple assignment: 10
 After addition assignment (+= 5): 15
 After subtraction assignment (-= 3): 12
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+5] Bitwise operators work on individual bits (0s and 1s) of integers. Computers store numbers in binary, so these operators directly manipulate that binary data.
+
+1️⃣ Bitwise AND (&)
+Rule:
+1 & 1 = 1
+Else = 0
+
+Example:
+int a = 5;   // 0101
+int b = 6;   // 0110
+int c = a & b;
+
+
+Binary:
+
+0101
+0110
+----
+0100  → 4
+
+
+✔ Output = 4
+
+2️⃣ Bitwise OR (|)
+Rule:
+0 | 0 = 0
+Else = 1
+
+Example:
+int a = 5;   // 0101
+int b = 6;   // 0110
+int c = a | b;
+
+
+Binary:
+
+0101
+0110
+----
+0111 → 7
+
+
+✔ Output = 7
+
+3️⃣ Bitwise XOR (^)
+Rule:
+Same bits → 0
+Different bits → 1
+
+Example:
+int a = 5;
+int b = 6;
+int c = a ^ b;
+
+
+Binary:
+
+0101
+0110
+----
+0011 → 3
+
+
+✔ Output = 3
+
+4️⃣ Bitwise NOT (~)
+Rule:
+~1 = 0
+~0 = 1
+
+Example:
+int a = 5;
+printf("%d", ~a);
+
+
+Binary (8-bit example):
+
+00000101  (5)
+11111010  (~5)
+
+
+Result = -6 (due to two’s complement)
+
+⚠ Output is negative — very important concept.
+
+5️⃣ Left Shift (<<)
+Meaning:
+
+Shift bits left, multiply by 2
+
+int a = 5;
+printf("%d", a << 1);
+
+
+Binary:
+
+0101 << 1 = 1010 → 10
+
+
+✔ a << n = a × 2ⁿ
+
+6️⃣ Right Shift (>>)
+Meaning:
+
+Shift bits right, divide by 2
+
+int a = 6;
+printf("%d", a >> 1);
+
+
+Binary:
+
+0110 >> 1 = 0011 → 3
+
+
+✔ a >> n = a ÷ 2ⁿ (for positive numbers)
