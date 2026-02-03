@@ -136,3 +136,49 @@ Output
 a && b : 1
 a || b : 1
 !a: 0
+_________________________________________________________________________________________________________________________________________________________
+4] Assignment Operators: Simple, Addition, and Subtraction Assignments
+Assignment operators in C are used to assign values to variables and perform arithmetic operations efficiently. Let’s explore three important assignment operators:
+
+1. Simple Assignment (=)
+
+The = operator is used to assign a value to a variable. It places the value on the right-hand side (RHS) into the left-hand side (LHS) variable.
+
+Syntax:
+
+variable = value;
+2. Addition Assignment (+=)
+
+The += operator adds the RHS value to the current value of the LHS variable and stores the result back in the LHS variable.
+
+Syntax:
+
+variable += value;  // same as: variable = variable + value;
+3. Subtraction Assignment (-=)
+
+The -= operator subtracts the RHS value from the current value of the LHS variable and stores the result back in the LHS variable.
+
+Syntax:
+
+variable -= value;  // same as: variable = variable - value;
+Example
+
+#include <stdio.h>  
+
+int main() {
+    int number = 10;  // Simple assignment: assigning value 10 to 'number'
+    printf("After simple assignment: %d\n", number);  
+
+    number += 5;  // Addition assignment: number = number + 5
+    printf("After addition assignment (+= 5): %d\n", number); 
+
+    number -= 3;  // Subtraction assignment: number = number - 3
+    printf("After subtraction assignment (-= 3): %d\n", number); 
+
+    return 0;  
+}
+Output:
+
+After simple assignment: 10
+After addition assignment (+= 5): 15
+After subtraction assignment (-= 3): 12
