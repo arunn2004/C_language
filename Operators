@@ -46,9 +46,39 @@ a % b = 0 [ modulus , gives only remainder value after the division ] .
 -a = -25
 
 
-a++ = 25
-a-- = 26
+a++ :  x++ is called post-increment because the increment happens after the value is used.
+#include <stdio.h>
 
+int main() {
+    int a = 5; //  Initialize the variable a with the value 5
+
+    printf("Before: %d\n", a);   // Print current value
+    printf("a++: %d\n", a++);    // Use, then increment
+    printf("After: %d\n", a);    // Value after increment
+
+    return 0;
+}
+Expected Output:
+Before: 5
+a++: 5
+After: 6
+
+++a :  the pre-increment operator (++x) increases the value of a variable by 1, but before its current value is used
+#include <stdio.h>
+
+int main() {
+    int x = 7;  // Initialize x with 7
+
+    // Pre-increment: x is incremented first, then printed
+    printf("Value after pre-increment: %d\n", ++x);
+
+    return 0;
+}
+Expected output:
+
+Value after pre-increment: 8
+
+same as for pre and post decrement
 ___________________________________________________________________________________________________________________________________________________________________________________________________
 
 2] Relational Operators
