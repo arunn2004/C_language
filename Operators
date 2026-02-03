@@ -187,10 +187,6 @@ ________________________________________________________________________________
 5] Bitwise operators work on individual bits (0s and 1s) of integers. Computers store numbers in binary, so these operators directly manipulate that binary data.
 
 1️⃣ Bitwise AND (&)
-Rule:
-1 & 1 = 1
-Else = 0
-
 Example:
 int a = 5;   // 0101
 int b = 6;   // 0110
@@ -203,15 +199,10 @@ Binary:
 0110
 ----
 0100  → 4
-
-
 ✔ Output = 4
 
-2️⃣ Bitwise OR (|)
-Rule:
-0 | 0 = 0
-Else = 1
 
+2️⃣ Bitwise OR (|)
 Example:
 int a = 5;   // 0101
 int b = 6;   // 0110
