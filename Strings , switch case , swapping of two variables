@@ -1,0 +1,53 @@
+1] String: A string is a sequence of characters, usually used to represent text such as words or sentences. Strings are one of the most common data types in programming
+#include <stdio.h>
+
+1] #include<stdio.h>
+int main()
+{
+    char a[] = "AAA";
+    char b[] = "bbb";
+    printf("%s\n",a);
+     printf("%s",b); 
+    return 0;
+}
+
+2 to find the length of a string : 
+#include<stdio.h>
+int main()
+{
+    char a[] = "arun";
+    printf("%zu",strlen(a));
+    return 0;
+}
+
+3] String concatenation using strcat()
+In C, string concatenation means joining two strings together to form one combined string.
+The strcat() function is used to append one string to the end of another.
+
+Syntax:
+
+strcat(destination, source);
+destination: The string to which source will be added.
+source: The string to be appended to the end of destination.
+strcat() modifies the destination string and gives back the final combined string. (Don't worry about how it gives back the string — it involves pointers, which you'll learn later.)
+Example:
+
+#include <stdio.h>
+#include <string.h>  // Required for strcat()
+
+int main() {
+    // Initialize the first part of the message
+    char greeting[50] = "Good";
+
+    // Second part to be added
+    char word[] = " Morning";
+
+    // Append word to greeting
+    strcat(greeting, word);
+
+    // Display the final message
+    printf("%s", greeting);  // Output: Good Morning
+
+    return 0;
+}
+
