@@ -164,3 +164,26 @@ int main() {
 
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
+2] Switch case: Switch Case in C — Definition
+A switch statement is used to select one block of code from multiple options based on the value of a variable or expression.It is an alternative to multiple if–else statements
+#include <stdio.h>
+
+int main()
+{
+    int num = 7;
+
+    switch(num % 2)
+    {
+        case 0:
+            printf("Even number");
+            break;
+
+        case 1:
+            printf("Odd number");
+            break;
+    }
+
+    return 0;
+}
+
+
