@@ -51,3 +51,76 @@ int main() {
     return 0;
 }
 
+
+
+4] Code part that matters
+char fruit1[] = "apple";
+char fruit2[] = "apricot";
+
+int result = strcmp(fruit1, fruit2);
+printf("Comparison result: %d\n", result);
+
+1. What strcmp() does
+
+strcmp() compares two strings character by character using ASCII values.
+
+It stops when:
+
+characters differ, or
+
+one string ends ('\0').
+
+Return value:
+
+0 → strings are equal
+
+negative → first string is smaller
+
+positive → first string is larger
+
+2. Compare "apple" and "apricot"
+
+Compare characters one by one:
+
+Position	fruit1	fruit2	Result
+1	a	a	same
+2	p	p	same
+3	p	r	different
+
+So comparison stops at:
+
+'p' vs 'r'
+
+3. ASCII values
+'p' = 112
+'r' = 114
+
+
+Difference:
+
+112 − 114 = -2
+
+
+So strcmp() returns:
+
+-2
+
+4. Final Output
+Comparison result: -2
+
+5. Important Understanding
+
+strcmp() does NOT compare string length first.
+It compares ASCII values lexicographically (like dictionary order).
+
+Example idea:
+
+apple
+apricot
+
+
+Since p comes before r, "apple" is smaller.
+
+6. Simple Summary
+
+strcmp() compares strings character by character and returns the ASCII difference at the first mismatch.
