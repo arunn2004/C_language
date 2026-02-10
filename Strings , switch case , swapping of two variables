@@ -124,3 +124,43 @@ Since p comes before r, "apple" is smaller.
 6. Simple Summary
 
 strcmp() compares strings character by character and returns the ASCII difference at the first mismatch.
+
+
+
+
+5] Accessing characters by index
+In C, strings are represented as character arrays, and you can access individual characters using indexing. This is useful when you need to examine or manipulate specific characters in a string.
+
+C strings are zero-indexed, which means the first character is at index 0, the second at index 1, and so on.
+Syntax:
+
+char character = stringName[index];
+index must be a valid position within the string (0 to length - 1).
+Indexing can be used on both the left (to modify) and right (to access) side of an assignment.
+Example:
+
+#include <stdio.h>
+
+int main() {
+    // Declare and initialize the string
+    char word[] = "Code";
+
+    // Access the first character (index 0)
+    char firstChar = word[0];  // 'C'
+    printf("First character: %c\n", firstChar);
+
+    // Access the fourth character (index 3)
+    char fourthChar = word[3];  // 'e'
+    printf("Fourth character: %c\n", fourthChar);
+
+    // Modify the last character (originally 'd' at index 2)
+    word[2] = 'm';
+
+    // Print the modified full string
+    printf("Modified word: %s\n", word); // Output: Come
+
+    return 0;
+}
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
