@@ -11,7 +11,7 @@ int main()
     return 0;
 }
 
-2 to find the length of a string : 
+2]   to find the length of a string : 
 #include<stdio.h>
 int main()
 {
@@ -20,7 +20,7 @@ int main()
     return 0;
 }
 
-3] String concatenation using strcat()
+3]   String concatenation using strcat()
 In C, string concatenation means joining two strings together to form one combined string.
 The strcat() function is used to append one string to the end of another.
 
@@ -53,32 +53,26 @@ int main() {
 
 
 
-4] Code part that matters
+4]    Code part that matters: 
 char fruit1[] = "apple";
 char fruit2[] = "apricot";
 
 int result = strcmp(fruit1, fruit2);
 printf("Comparison result: %d\n", result);
 
-1. What strcmp() does
-
+What strcmp() does
 strcmp() compares two strings character by character using ASCII values.
 
 It stops when:
-
 characters differ, or
-
 one string ends ('\0').
 
 Return value:
-
 0 → strings are equal
-
 negative → first string is smaller
-
 positive → first string is larger
 
-2. Compare "apple" and "apricot"
+Compare "apple" and "apricot"
 
 Compare characters one by one:
 
@@ -91,7 +85,7 @@ So comparison stops at:
 
 'p' vs 'r'
 
-3. ASCII values
+ ASCII values
 'p' = 112
 'r' = 114
 
@@ -105,25 +99,20 @@ So strcmp() returns:
 
 -2
 
-4. Final Output
+Final Output
 Comparison result: -2
 
-5. Important Understanding
+ 
 
 strcmp() does NOT compare string length first.
 It compares ASCII values lexicographically (like dictionary order).
 
 Example idea:
-
 apple
 apricot
-
-
 Since p comes before r, "apple" is smaller.
 
-6. Simple Summary
-
-strcmp() compares strings character by character and returns the ASCII difference at the first mismatch.
+Simple Summary : strcmp() compares strings character by character and returns the ASCII difference at the first mismatch.
 
 
 
@@ -185,5 +174,58 @@ int main()
 
     return 0;
 }
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
+3] swap 2 no’s  without using 3rd variable
+     
+#include<stdio.h>
+int main()
+{
+    int x,y;
+    printf("enter any two numbers:");
+    scanf("%d%d",&x,&y);
+    x = x+y;
+    y = x-y;
+    x = x-y;
+    printf("%d%d",x,y);
+    return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
+4] swap 2 numbers using 3rd variable
+
+#include <stdio.h>
+
+int main()
+{
+    int x, y, temp;
+
+    printf("Enter any two numbers: ");
+    scanf("%d %d", &x, &y);
+
+    temp = x;
+    x = y;
+    y = temp;
+
+    printf("After swapping: %d %d", x, y);
+
+    return 0;
+}
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+5] scanf:
+
+#include <stdio.h>
+
+int main() {
+    int age;                // Variable to store age
+    float height;           // Variable to store height
+
+    // Ask the user to enter their age
+    scanf("%d", &age);      // Read integer for age
+
+    // Display the input values
+    printf("You entered age: %d\n", age);
+
+    return 0;               // End of program
+}
