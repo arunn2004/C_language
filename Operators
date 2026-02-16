@@ -291,3 +291,32 @@ Binary:
 
 
 ✔ a >> n = a ÷ 2ⁿ (for positive numbers)
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+What is Conditional Operator?
+The conditional operator is a shortcut form of if-else.
+
+It is also called the ternary operator because it uses three operands.
+
+2️⃣ Syntax
+c
+Copy code
+condition ? expression1 : expression2;
+Meaning:
+If condition is true → expression1 executes
+
+If condition is false → expression2 executes
+
+
+#include <stdio.h>
+
+int main()
+{
+    int num = -5;
+
+    (num >= 0) ? printf("Positive") : printf("Negative");
+
+    return 0;
+}
+
