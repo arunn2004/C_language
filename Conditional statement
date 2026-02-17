@@ -1,0 +1,80 @@
+Conditional Statement : A conditional statement is a control statement that executes different blocks of code depending on whether a condition is true or false.
+A conditional statement is used to make decisions in a program based on a condition.
+
+1] IF Condition:
+
+#include <stdio.h>
+int main() {
+    int age = 20;
+
+    // If statement
+    if (age >= 18) {
+        printf("Eligible for vote");
+    }
+}
+
+2] IF - ELSE Condition:
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    
+    if(a>=13)
+    {
+        printf("a is higher");
+        
+    }
+    else
+    {
+        printf("a is lower");
+    }
+    return 0;
+}
+
+
+3] Nested IF-ELSE:
+
+#include <stdio.h>
+
+int main(){
+    int age = 11;
+
+    if (age >= 18) {
+        if (age >= 60)
+            printf("Eligible to vote (Senior Citizen)\n");
+        else
+            printf("Eligible for vote\n");
+    }
+    else {
+        printf("Not eligible to vote (Under 18)\n");
+        if (age >= 13) 
+                printf("teenager\n");
+            else
+                printf("not a teenager\n");
+        }
+
+    return 0;
+}
+
+
+4] if-else-if Ladder:  The if else if ladder  statements are used when the user has to decide among multiple options.
+
+#include <stdio.h>
+
+int main() {
+    int i = 20;
+
+    // If else ladder with three conditions
+    if (i == 10)
+        printf("Not Eligible");
+    else if (i == 15)
+        printf("wait for three years");
+    else if (i == 20)
+        printf("You can vote");
+    else
+        printf("Not a valid age");
+        
+    return 0;
+}
