@@ -74,4 +74,22 @@ int main() {
   return 0;
 }
 
+__________________________________________________________________________________________________________________________________________________________________________________________________
 
+| Loop     | Embedded Usage                              |
+| -------- | ------------------------------------------- |
+| for      | Known count (delay loops, array processing) |
+| while    | Waiting for hardware events [ condition     |
+                based ]                                     |
+| do-while | Rare                                        |
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Simple Real-Life Analogy
+Think of checking attendance:
+
+for loop : Take attendance for 30 students.
+
+while loop : Continue working while battery > 0.
+
+do-while loop : Enter password at least once, then check.
