@@ -1,0 +1,105 @@
+1️⃣ Without Parameter & Without Return Value
+👉 No input
+👉 No output
+
+#include <stdio.h>
+
+void greet(void)
+{
+    printf("Hello\n");
+}
+
+int main()
+{
+    greet();
+    return 0;
+}
+✔ Used when function just performs an action (like LED ON).
+
+
+2️⃣ With Parameter & Without Return Value
+👉 Takes input
+👉 Does not return anything
+
+#include <stdio.h>
+
+void printSquare(int num)
+{
+    printf("Square = %d\n", num * num);
+}
+
+int main()
+{
+    printSquare(5);
+    return 0;
+}
+✔ Used when function performs operation but no need to send result back.
+
+3️⃣ Without Parameter & With Return Value
+👉 No input
+👉 Returns output
+
+#include <stdio.h>
+
+int getNumber(void)
+{
+    return 10;
+}
+
+int main()
+{
+    int value = getNumber();
+    printf("%d", value);
+    return 0;
+}
+✔ Used when function generates or reads a value (like ADC read).
+
+🔹 4️⃣ With Parameter & With Return Value ⭐ (Most Important)
+👉 Takes input
+👉 Returns output
+
+C
+
+#include <stdio.h>
+
+int add(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    int result = add(5, 3);
+    printf("Sum = %d", result);
+    return 0;
+}
+✔ Most commonly used in embedded systems.
+
+🔥 Summary Table
+Type	Parameter	Return	Usage
+1	❌	❌	Simple action
+2	✅	❌	Action using input
+3	❌	✅	Generate value
+4	✅	✅	Process and return result
+
+🎯 Embedded Example Mapping
+Embedded Task	Function Type
+LED ON	        -        No param, No return
+Set PWM duty	  -        With param, No return
+Read ADC	      -        No param, With return
+Calculate CRC	  -        With param, With return
+
+🚀 Interview Style Answer
+Functions in C are classified into four types based on the presence of parameters and return values: with/without parameters and with/without return value. The most commonly used type in embedded systems is with parameters and with return value.
+
+
+
+🔹 “Return” and “Output” Are NOT the Same
+There are two different things:
+
+1️⃣ Returning a value → sends value back to the calling function
+2️⃣ Printing output → displays something on the screen
+
+These are completely different.
+
+
